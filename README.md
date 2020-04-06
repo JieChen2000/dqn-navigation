@@ -38,7 +38,6 @@ The code is written in PyTorch and Python 3.
 * `pip install -e . `
 
 ### Running Instructions
-* `pip install -r requirement.txt` //this install the required pytorch, numpy etc.
 * `python train_agent.py`  //this will call the DQN algorithm implementated in dqn_agent.py and model.py. The agent will solve the problem once it gets rewards of +15. The model weight wil be saved to a checkpoint.pth.
 * `python run_agent.py`  //this will call the trained model and run the smart agent to interact with enviroment.
 
