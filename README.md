@@ -22,20 +22,24 @@ The task is episodic, and in order to solve the environment, the agent must get 
 
 ### Enviroment Setup
 
-1. Current code is tested with the Unity Machine Learning Agents (ML-Agents) environment on windows 64-bit operating system, download the enviroment 
+The code is written in PyTorch and Python 3.
+
+1. Clone this repo by
+* git clone https://github.com/JieChen2000/dqn-navigation.git
+
+2. Current code is tested with the Unity Machine Learning Agents (ML-Agents) environment on windows 64-bit operating system, download the enviroment
     - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip)
 
-2. Place the file in the this GitHub repository, and unzip (or decompress) the file.
+3. Place the file in the this GitHub repository, and unzip (or decompress) the file.
 
-3. Install openai gym, which is required by ML-Agents.
+4. Install openai gym, which is required by ML-Agents.
 * `git clone https://github.com/openai/gym.git`
 * `cd gym`
 * `pip install -e . `
 
-### Instructions
-
-python train_agent.py
-this will call the DQN algorithm implementated in dqn_agent.py and model.py. The agent will solve the problem once it gets rewards of +15. The model weight wil be saved to a checkpoint.pth.
+### Running Instructions
+* `pip install -r requirement.txt` //this install the required pytorch, numpy etc.
+* `python train_agent.py`  //this will call the DQN algorithm implementated in dqn_agent.py and model.py. The agent will solve the problem once it gets rewards of +15. The model weight wil be saved to a checkpoint.pth.
 
 ### Demo and Algorithm Description
 
