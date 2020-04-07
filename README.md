@@ -18,7 +18,7 @@ The state space has 37 dimensions and contains the agent's velocity, along with 
 - **`2`** - turn left.
 - **`3`** - turn right.
 
-The task is episodic, and in order to solve the environment, the agent must get an average score of +13 over 100 consecutive episodes.
+The task is episodic, and in order to solve the environment, the agent must get an average score of +15 over 100 consecutive episodes.
 
 ### Enviroment Setup
 
@@ -38,7 +38,7 @@ The code is written in PyTorch and Python 3.
 * `pip install -e . `
 
 ### Running Instructions
-* `python train_agent.py`  //this will call the DQN algorithm implementated in dqn_agent.py and model.py. The agent will solve the problem once it gets rewards of +15. The model weight wil be saved to a checkpoint.pth.
+* `python train_agent.py`  //this will call the DQN agent implementated in dqn_agent.py and model.py (NN definition). The agent will solve the problem once it gets rewards of +15. The model weight wil be saved to a checkpoint.pth.
 * `python run_agent.py`  //this will call the trained model and run the smart agent to interact with enviroment.
 
 ### Demo and Algorithm Description
