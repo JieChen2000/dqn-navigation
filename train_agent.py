@@ -6,7 +6,7 @@ from dqn_agent import Agent
 import matplotlib.pyplot as plt
 import torch
 
-env = UnityEnvironment(file_name="Banana_Windows_x86_64/Banana.exe")
+env = UnityEnvironment(file_name="Banana_Windows_x86_64/Banana.exe", seed=0)
 # get the default brain
 brain_name = env.brain_names[0]
 brain = env.brains[brain_name]
@@ -32,7 +32,7 @@ print('States have length:', state_size)
 
 agent = Agent(state_size=state_size, action_size=action_size, seed=0)
 
-def dqn(n_episodes=2000, max_t=1500, eps_start=1.0, eps_end=0.01, eps_decay=0.995):
+def dqn(n_episodes=2000, max_t=350, eps_start=1.0, eps_end=0.01, eps_decay=0.995):
     """Deep Q-Learning.
     
     Params
@@ -84,7 +84,7 @@ ax = fig.add_subplot(111)
 plt.plot(np.arange(len(scores)), scores)
 plt.ylabel('Score')
 plt.xlabel('Episode #')
-plt.savefig('train_score_vs_episode.png')
+plt.savefig(r'local_test\train_score_vs_episode.png')
 
 env.close()
 
